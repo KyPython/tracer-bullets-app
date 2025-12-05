@@ -1,0 +1,16 @@
+{
+  "name": "tracer-bullets-app",
+  "version": "1.0.0",
+  "description": "Tracer Bullets demo - end-to-end integration prototype",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test:backend": "cd backend && npm test"
+  },
+  "keywords": ["tracer-bullets", "prototype", "full-stack"],
+  "author": "",
+  "license": "ISC"
+}
+
