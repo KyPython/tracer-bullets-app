@@ -146,6 +146,18 @@ class TasksRepository {
 
 The routes don't need to change because they depend on the repository interface, not the implementation.
 
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+**Quick Deploy:**
+
+1. **Backend**: Deploy to [Railway](https://railway.app) or [Render](https://render.com)
+2. **Frontend**: Deploy to [Vercel](https://vercel.com) or [Netlify](https://netlify.com)
+3. Set `VITE_API_URL` environment variable in frontend to your backend URL
+
+The app is configured for easy deployment with environment variables for API URLs and CORS settings.
+
 ## Project Structure
 
 ```

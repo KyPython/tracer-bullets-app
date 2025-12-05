@@ -23,7 +23,8 @@ function TaskForm({ onTaskCreated }: TaskFormProps) {
     setError(null);
 
     try {
-      const response = await fetch('/api/tasks', {
+      const apiUrl = import.meta.env.VITE_API_URL || '/api';
+      const response = await fetch(`${apiUrl}/tasks`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -24,7 +24,8 @@ function App() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('/api/tasks');
+      const apiUrl = import.meta.env.VITE_API_URL || '/api';
+      const response = await fetch(`${apiUrl}/tasks`);
       if (!response.ok) {
         throw new Error('Failed to fetch tasks');
       }
